@@ -1,0 +1,64 @@
+.food-item-card {
+  max-width: 320px;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.food-item-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0 !important; /* Override global/Bootstrap padding */
+  margin: 0 !important; /* Override global/Bootstrap margin */
+}
+
+.food-item-description {
+  font-size: 0.8rem;
+  color: #6c757d; /* Bootstrap text-muted */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  line-clamp: 3; /* Standard property for compatibility */
+  -webkit-box-orient: vertical;
+}
+
+.food-item-btn {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  transition: transform 0.2s ease;
+}
+
+.food-item-btn:hover {
+  transform: scale(1.05);
+}
+
+.card-footer {
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+  border-top: none;
+}
+
+@media (max-width: 575.98px) {
+  .food-item-card {
+    max-width: 100%;
+  }
+  .food-item-img {
+    height: 180px;
+  }
+  .food-item-description {
+    -webkit-line-clamp: 2; /* 2 lines on small screens */
+    line-clamp: 2; /* Standard property for compatibility */
+  }
+}

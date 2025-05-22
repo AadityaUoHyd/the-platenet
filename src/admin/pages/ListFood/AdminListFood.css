@@ -1,0 +1,92 @@
+.table td {
+    vertical-align: middle;
+}
+
+.hover-del {
+  color: red;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-del:hover {
+  transform: scale(1.2);
+  color: darkred;
+}
+
+.hover-edit {
+  color: #216d91;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-edit:hover {
+  transform: scale(1.2);
+  color: #1a5675;
+}
+
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background: linear-gradient(90deg, #216d91, #45B7D1);
+  color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #216d91, #45B7D1);
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background: #6b7280;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+}
+
+.form-control, .form-control:focus {
+  border-color: #e5e7eb;
+  box-shadow: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .modal-content {
+    padding: 0.5rem;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+  }
+}

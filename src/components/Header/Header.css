@@ -1,0 +1,64 @@
+/* src/components/Header.css */
+.header.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.header {
+  padding: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  margin-top: 0.25rem;
+  color: white;
+  background-image: url("../../assets/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Rest of your existing CSS remains unchanged */
+.btn.btn-size {
+  padding: 14px 28px !important;
+  font-size: 1.25rem !important;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  background-color: #216d91;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 12px rgba(33, 109, 145, 0.5);
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.btn.btn-size:hover {
+  background-color: #344347;
+  color: #216d91;
+  transform: scale(1.05);
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(33, 109, 145, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(33, 109, 145, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(33, 109, 145, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-image: url("../../assets/header-mobile.png") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #344347 !important;
+    color: white !important;
+  }
+}
