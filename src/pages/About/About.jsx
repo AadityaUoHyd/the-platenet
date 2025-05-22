@@ -81,7 +81,7 @@ const About = () => {
                         <div className="col-md-4">
                             <div className="card shadow-sm h-100">
                                 <img
-                                    src="https://res-console.cloudinary.com/ddgkgaffw/thumbnails/v1/image/upload/v1744675127/bXEzZjJlZXVuMnZ3OWxhNnp2dmk=/drilldown"
+                                    src="https://github.com/AadityaUoHyd/the-platenet/blob/main/aadi.jpg"
                                     alt="Team Member"
                                     className="card-img-top team-img"
                                 />
