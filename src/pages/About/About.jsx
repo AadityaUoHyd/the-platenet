@@ -7,7 +7,7 @@ const About = () => {
         <div className="about-page">
             <section className="hero-section text-center py-5">
                 <Utensils size={48} className="text-primary mb-3" />
-                <h1 className="display-4 fw-bold animate-fade-in text-primary">About The Platenet</h1>
+                <h1 className="display-4 fw-bold animate-fade-in text-primary">About The PlateNet</h1>
                 <p className="lead text-muted">Delivering delicious meals to your doorstep.</p>
             </section>
             <div className="container py-5">
@@ -81,7 +81,7 @@ const About = () => {
                         <div className="col-md-4">
                             <div className="card shadow-sm h-100">
                                 <img
-                                    src="https://github.com/AadityaUoHyd/the-platenet/blob/main/aadi.jpg"
+                                    src="https://raw.githubusercontent.com/AadityaUoHyd/the-platenet/refs/heads/main/aadi.jpg"
                                     alt="Team Member"
                                     className="card-img-top team-img"
                                 />
