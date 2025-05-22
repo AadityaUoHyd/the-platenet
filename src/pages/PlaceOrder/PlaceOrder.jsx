@@ -4,7 +4,6 @@ import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 import { calculateCartTotals } from "../../util/cartUtils";
 import { toast } from "react-toastify";
-import { RAZORPAY_KEY } from "../../util/contANTS";
 import { useNavigate } from "react-router-dom";
 import {
   createOrder,
@@ -13,6 +12,8 @@ import {
 } from "../../service/orderService";
 import { clearCartItems } from "../../service/cartService";
 import { getUserProfile, updateUserAddress } from "../../service/userService";
+
+const RAZORPAY_KEY = import.meta.env.VITE_RAZORPAY_KEY;
 
 const PlaceOrder = () => {
   const { foodList, quantities, setQuantities, token } = useContext(StoreContext);
