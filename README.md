@@ -1,6 +1,7 @@
 # The Platenet
 
 The Platenet is a full-stack food ordering web application built with Spring Boot (backend), React (frontend), and MongoDB (database). It allows customers to browse food items, add them to a cart, place orders, and view order history, while providing an admin panel for managing food items and orders. This repository contains only frontend code.
+![](https://github.com/AadityaUoHyd/the-platenet/blob/main/screenshot.png)
 
 ## Features
 
