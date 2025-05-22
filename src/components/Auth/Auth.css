@@ -153,6 +153,7 @@
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1rem;
+  align-items: center; /* Center-align buttons, including Google OAuth */
 }
 
 .auth-submit-btn {
@@ -165,6 +166,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%; /* Match Google OAuth button width */
 }
 
 .auth-submit-btn:hover {

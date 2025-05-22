@@ -202,25 +202,35 @@ GET /api/orders/myorders: Get user’s orders.
 
 Screenshots
 To be added: Screenshots of Home, Add Food form, Admin Orders page.
-
+```
+## Deploy in Render
+```
+Created set-env.ps1 for powershell execution of .env file, in order to create "mvn clean package" for the-platenet-backend.jar. Open powershell, go to source code root directory.
+.\set-env.ps1
+mvn clean package
+Now when you get build success by powershell, need to push that .jar in dockerhub. (used dockerfile)
+docker build -t aadiraj48dockerhub/the-platenet-backend .
+docker push aadiraj48dockerhub/the-platenet-backend
+Deploy on render.
+```
 ## Contributing
-
+```
 Fork the repository.
 Create a feature branch (git checkout -b feature/your-feature).
 Commit changes (git commit -m 'Add your feature').
 Push to the branch (git push origin feature/your-feature).
 Open a Pull Request.
-
+```
 ## Future Improvements
-
+```
 Complete Razorpay integration for seamless payments.
 Add unit tests for backend (JUnit) and frontend (Jest).
 Implement food item search/filter in /admin/list.
 Add pagination for order listings in /admin/orders.
-
+```
 ## License
 This project is licensed under the MIT License.
 
 ## Demo
 https://the-platenet.vercel.app
-```
+
