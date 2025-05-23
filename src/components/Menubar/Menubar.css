@@ -154,6 +154,7 @@
 }
 
 @media (max-width: 991px) {
+  /* Existing styles */
   .navbar-nav {
     padding: 0.5rem 0;
     display: flex;
@@ -177,17 +178,19 @@
   }
 
   .d-flex.gap-4 {
-    display: block !important; /* Remove flex to allow centering */
-    text-align: center !important; /* Center children */
-    align-items: flex-start !important;
+    display: flex !important; /* Use flex for alignment */
+    flex-direction: column !important; /* Stack items vertically */
+    align-items: center !important; /* Center items horizontally */
+    justify-content: center !important; /* Center items vertically */
     gap: 0.75rem !important;
     padding: 0.5rem 1.5rem;
+    width: 100% !important; /* Ensure full width for centering */
   }
 
   .d-flex.gap-4 a {
-    display: block !important; /* Center cart Link */
+    display: inline-block !important; /* Inline-block for cart link */
     margin: 0 auto !important;
-    width: auto !important; /* Prevent full-width */
+    width: auto !important;
   }
 
   .position-relative {
@@ -214,10 +217,26 @@
     max-width: 100%;
     margin-top: 0.5rem;
     overflow-x: hidden;
+    text-align: center !important; /* Center dropdown items */
+    left: 50% !important; /* Center dropdown horizontally */
+    transform: translateX(-50%) !important; /* Adjust for centering */
   }
 
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33, 109, 145, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; /* Blue hamburger icon */
+  .dropdown {
+    display: flex !important;
+    justify-content: center !important; /* Center the dropdown */
+    align-items: center !important; /* Vertically center */
+    width: 100% !important; /* Ensure full width for centering */
+  }
+
+  .dropdown-toggle {
+    display: flex !important;
+    justify-content: center !important; /* Center the avatar */
+    align-items: center !important; /* Vertically center */
+  }
+
+  .dropdown-toggle img {
+    margin: 0 auto !important; /* Ensure avatar is centered */
   }
 }
 
@@ -241,10 +260,20 @@
   .dropdown-toggle img {
     width: 28px;
     height: 28px;
+    margin: 0 auto !important; /* Center the avatar image */
   }
 
   .dropdown-item {
     font-size: 0.9rem;
     padding: 0.4rem 2px;
+  }
+
+  .dropdown {
+    justify-content: center !important; /* Reinforce centering */
+  }
+
+  .dropdown-menu {
+    left: 50% !important; /* Center dropdown horizontally */
+    transform: translateX(-50%) !important; /* Adjust for centering */
   }
 }
