@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: auto;
-  width: auto;
+  width: 100vw; /* Ensure full width on mobile */
 }
 
 .auth-card {
@@ -153,7 +153,7 @@
   flex-direction: column;
   gap: 0.75rem;
   margin-top: 1rem;
-  align-items: center; /* Center-align buttons, including Google OAuth */
+  align-items: center;
 }
 
 .auth-submit-btn {
@@ -166,7 +166,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%; /* Match Google OAuth button width */
+  width: 100%;
 }
 
 .auth-submit-btn:hover {
@@ -252,29 +252,34 @@
 }
 
 @media (max-width: 768px) {
+  .auth-container {
+    padding: 0.5rem; /* Add padding to prevent content from touching edges */
+  }
+
   .auth-card {
     flex-direction: column;
-    max-width: 400px;
-    padding: 1.5rem;
-    margin: 0.5rem;
+    max-width: 90vw; /* Use viewport width for better scaling */
+    margin: 1rem;
+    border-radius: 12px; /* Slightly smaller radius for mobile */
   }
 
   .auth-left-panel {
     padding: 1.5rem;
     align-items: center;
     border-bottom: 1px solid #e5e7eb;
+    width: 100%; /* Ensure full width */
   }
 
   .auth-logo {
-    width: 120px;
+    width: 100px; /* Smaller logo for mobile */
   }
 
   .auth-left-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Reduced font size for better fit */
   }
 
   .auth-left-text p {
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Slightly smaller text */
   }
 
   .auth-form-container {
@@ -282,18 +287,37 @@
   }
 
   .auth-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Adjusted for mobile */
+  }
+
+  .auth-tabs {
+    margin-bottom: 1rem; /* Reduce margin for tighter layout */
   }
 
   .auth-tab {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Smaller tabs for mobile */
     padding: 0.5rem 1rem;
+  }
+
+  .auth-input-group input {
+    padding: 0.65rem; /* Slightly smaller padding */
+    font-size: 0.95rem; /* Adjusted font size */
   }
 
   .otp-input {
     width: 35px;
     height: 35px;
     font-size: 1rem;
+  }
+
+  .auth-submit-btn,
+  .auth-reset-btn {
+    padding: 0.65rem; /* Reduced padding */
+    font-size: 0.95rem; /* Smaller font for buttons */
+  }
+
+  .auth-forgot-btn {
+    font-size: 0.85rem; /* Smaller font for forgot button */
   }
 
   .google-login-btn div {
@@ -303,9 +327,14 @@
 }
 
 @media (max-width: 480px) {
+  .auth-container {
+    padding: 0.25rem; /* Minimal padding for very small screens */
+  }
+
   .auth-card {
-    padding: 1rem;
-    max-width: 350px;
+    max-width: 95vw; /* Maximize usable space */
+    padding: 0.75rem; /* Reduced padding */
+    border-radius: 10px; /* Smaller radius for very small screens */
   }
 
   .auth-left-panel {
@@ -313,15 +342,15 @@
   }
 
   .auth-logo {
-    width: 100px;
+    width: 80px; /* Even smaller logo */
   }
 
   .auth-left-text h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem; /* Further reduced font size */
   }
 
   .auth-left-text p {
-    font-size: 0.8rem;
+    font-size: 0.75rem; /* Smaller text for readability */
   }
 
   .auth-form-container {
@@ -329,17 +358,21 @@
   }
 
   .auth-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem; /* Smaller title */
+  }
+
+  .auth-tabs {
+    margin-bottom: 0.75rem; /* Tighter spacing */
   }
 
   .auth-tab {
-    font-size: 0.9rem;
-    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem; /* Smaller tabs */
+    padding: 0.4rem 0.75rem;
   }
 
   .auth-input-group input {
     font-size: 0.9rem;
-    padding: 0.6rem;
+    padding: 0.5rem; /* Further reduced padding */
   }
 
   .otp-input {
@@ -351,13 +384,13 @@
   .auth-submit-btn,
   .auth-reset-btn,
   .auth-forgot-btn {
-    font-size: 0.9rem;
-    padding: 0.6rem;
+    font-size: 0.85rem; /* Smaller button text */
+    padding: 0.5rem; /* Smaller padding */
   }
 
   .google-login-btn div {
-    padding: 0.6rem !important;
-    font-size: 0.9rem !important;
+    padding: 0.5rem !important;
+    font-size: 0.85rem !important;
   }
 }
 
@@ -375,4 +408,20 @@
   color: #e47a42;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .text-h1,
+  .text-net {
+    font-size: 2rem; /* Reduced header size for tablets */
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-h1,
+  .text-net {
+    font-size: 1.6rem; /* Further reduced for small phones */
+    margin-bottom: 0.75rem;
+  }
 }
