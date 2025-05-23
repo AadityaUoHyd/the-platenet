@@ -210,7 +210,7 @@ const PlaceOrder = () => {
               ))}
               <li className="list-group-item d-flex justify-content-between">
                 <div>
-                  <span>Shipping</span>
+                  <span>Delivery Charge</span>
                 </div>
                 <span className="text-body-secondary">
                   ₹{subtotal === 0 ? 0.0 : shipping.toFixed(2)}
@@ -218,15 +218,15 @@ const PlaceOrder = () => {
               </li>
               <li className="list-group-item d-flex justify-content-between">
                 <div>
-                  <span>Tax (5%)</span>
+                  <span>GST (5%)</span>
                 </div>
                 <span className="text-body-secondary">
                   ₹{tax.toFixed(2)}
                 </span>
               </li>
-              <li className="list-group-item d-flex justify-content-between">
-                <span>Total (INR)</span>
-                <strong>₹{total.toFixed(2)}</strong>
+              <li className="list-group-item d-flex justify-content-between bg-success text-white">
+                <strong>Total (in round figure)</strong>
+                <strong>₹{Math.round(total.toFixed(2))}</strong>
               </li>
             </ul>
           </div>

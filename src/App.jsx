@@ -17,7 +17,7 @@ import AdminAddFood from "./admin/pages/AddFood/AdminAddFood";
 import AdminListFood from "./admin/pages/ListFood/AdminListFood";
 import AdminOrders from "./admin/pages/Orders/AdminOrders";
 import AdminDashboard from "./admin/pages/AdminDashboard/AdminDashboard"; 
-import AdminMenubar from "./admin/components/Menubar/AdminMenubar";
+import AdminMenubar from "./admin/components/AdminMenubar/AdminMenubar";
 import ProtectedAdminRoute from "./admin/components/AdminRoute/ProtectedAdminRoute";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";

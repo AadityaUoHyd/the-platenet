@@ -99,18 +99,18 @@ const Cart = () => {
                 <span>&#8377;{subtotal.toFixed(2)}</span>
               </div>
               <div className="d-flex justify-content-between mb-3">
-                <span>Shipping</span>
+                <span>Delivery Charge</span>
                 <span>&#8377;{subtotal === 0 ? 0.0 : shipping.toFixed(2)}</span>
               </div>
               <div className="d-flex justify-content-between mb-3">
-                <span>Tax</span>
+                <span>GST</span>
                 <span>&#8377;{tax.toFixed(2)}</span>
               </div>
               <hr />
               <div className="d-flex justify-content-between mb-4">
-                <strong>Total</strong>
+                <strong>Total (in round figure)</strong>
                 <strong>
-                  &#8377;{subtotal === 0 ? 0.0 : total.toFixed(2)}
+                  &#8377;{subtotal === 0 ? 0.0 : Math.round(total.toFixed(2))}
                 </strong>
               </div>
               <button
