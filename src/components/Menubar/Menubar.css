@@ -154,7 +154,6 @@
 }
 
 @media (max-width: 991px) {
-  /* Existing styles */
   .navbar-nav {
     padding: 0.5rem 0;
     display: flex;
@@ -177,7 +176,16 @@
     width: calc(100% - 3rem);
   }
 
+  /* .d-flex.gap-4 {
+    display: block !important; 
+    text-align: center !important; 
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+    padding: 0.5rem 1.5rem;
+  } */
+
   .d-flex.gap-4 {
+    text-align: center !important; /* Center children */
     display: flex !important; /* Use flex for alignment */
     flex-direction: column !important; /* Stack items vertically */
     align-items: center !important; /* Center items horizontally */
@@ -188,9 +196,9 @@
   }
 
   .d-flex.gap-4 a {
-    display: inline-block !important; /* Inline-block for cart link */
+    display: inline-block !important; /* Center cart Link */
     margin: 0 auto !important;
-    width: auto !important;
+    width: auto !important; /* Prevent full-width */
   }
 
   .position-relative {
@@ -238,6 +246,10 @@
   .dropdown-toggle img {
     margin: 0 auto !important; /* Ensure avatar is centered */
   }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33, 109, 145, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; /* Blue hamburger icon */
+  }
 }
 
 @media (max-width: 576px) {
@@ -260,7 +272,7 @@
   .dropdown-toggle img {
     width: 28px;
     height: 28px;
-    margin: 0 auto !important; /* Center the avatar image */
+    margin: 0 auto !important;
   }
 
   .dropdown-item {
