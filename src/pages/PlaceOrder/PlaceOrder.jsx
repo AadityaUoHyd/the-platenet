@@ -92,7 +92,7 @@ const PlaceOrder = () => {
         description: item.description,
         name: item.name,
       })),
-      amount: Math.round(total * 100), // convert rupees to paise,
+      amount: Math.round(total.toFixed(2)),
       orderStatus: "Preparing",
     };
 
