@@ -182,15 +182,7 @@ const PlaceOrder = () => {
   return (
     <div className="container mt-4">
       <main>
-        <div className="py-5 text-center">
-          <img
-            className="d-block mx-auto"
-            src={assets.logo}
-            alt=""
-            width="98"
-            height="98"
-          />
-        </div>
+
         <div className="row g-5">
           <div className="col-md-5 col-lg-4 order-md-last">
             <h4 className="d-flex justify-content-between align-items-center mb-3">

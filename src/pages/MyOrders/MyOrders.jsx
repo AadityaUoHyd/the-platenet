@@ -66,7 +66,9 @@ const MyOrders = () => {
               />
               <table className="table table-responsive">
                 <tbody>
-                  {recentOrders.map((order, index) => {
+                  {recentOrders
+                  .filter((order) => order.paymentStatus === "Paid")
+                  .map((order, index) => {
                     return (
                       <tr key={index}>
                         <td>
