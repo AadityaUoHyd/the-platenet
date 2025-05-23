@@ -46,3 +46,13 @@
 .explore-menu-list-item .text-active {
     color: tomato;
 }
+
+@media (max-width: 576px) {
+    .explore-menu-list {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important; /* Allow items to wrap and stay centered */
+        
+    }
+}

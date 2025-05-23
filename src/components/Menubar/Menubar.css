@@ -156,6 +156,9 @@
 @media (max-width: 991px) {
   .navbar-nav {
     padding: 0.5rem 0;
+    display: flex;
+    justify-content: center !important; /* Center-align nav links */
+    text-align: center !important;
   }
 
   .navbar-nav .nav-link {
@@ -174,10 +177,27 @@
   }
 
   .d-flex.gap-4 {
-    flex-direction: column;
+    display: block !important; /* Remove flex to allow centering */
+    text-align: center !important; /* Center children */
     align-items: flex-start !important;
     gap: 0.75rem !important;
     padding: 0.5rem 1.5rem;
+  }
+
+  .d-flex.gap-4 a {
+    display: block !important; /* Center cart Link */
+    margin: 0 auto !important;
+    width: auto !important; /* Prevent full-width */
+  }
+
+  .position-relative {
+    width: fit-content !important; /* Tighten container for badge */
+    margin: 0 auto !important; /* Ensure centering */
+  }
+
+  .badge {
+    left: auto !important; /* Position badge right of cart */
+    right: -10px !important;
   }
 
   .btn-outline-primary,
@@ -194,6 +214,10 @@
     max-width: 100%;
     margin-top: 0.5rem;
     overflow-x: hidden;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(33, 109, 145, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; /* Blue hamburger icon */
   }
 }
 

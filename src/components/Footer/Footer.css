@@ -67,3 +67,25 @@
 .footer-link:hover {
     color: #6c757d !important; /* Bootstrap's text-secondary color */
 }
+
+@media screen and (max-width: 768px) {
+    .footer .col-md-3 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .footer .social-links {
+        justify-content: center;
+    }
+    .footer .input-group .input-bar{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .form-control,
+    .footer .btn-primary {
+        width: 100%;
+        border-radius: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+}

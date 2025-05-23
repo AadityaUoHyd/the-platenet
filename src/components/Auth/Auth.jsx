@@ -160,16 +160,16 @@ const Auth = () => {
         <div className="auth-card">
           <div className="auth-left-panel">
             <h1 className="text-h1">The Plate<span className="text-net">Net</span></h1>
-            <img src={logo} alt="Platenet Logo" className="auth-logo" />
+            <img src={logo} alt="PlateNet Logo" className="auth-logo" />
             <div className="auth-left-text">
               <h2>
                 {activeTab === "signin" ? "Sign In" : 
                  showForgotPassword ? "Forgot Password" : "Sign Up"}
               </h2>
               <p>
-                {activeTab === "signin" ? "Log in to your Platenet account" : 
+                {activeTab === "signin" ? "Log in to your PlateNet account" : 
                  showForgotPassword ? "Reset your password" : 
-                 "Create a new Platenet account"}
+                 "Create a new PlateNet account"}
               </p>
             </div>
           </div>

@@ -28,7 +28,7 @@ const Header = () => {
         }`}
       >
         <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold">Savor the Flavors You Crave</h1>
+          <h1 className="display-5 fw-bold title-text">Savor the Flavors You Crave</h1>
           <p className="col-md-8 fs-4">
             Dive into Hyderabad’s finest culinary delights.
           </p>

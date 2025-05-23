@@ -93,7 +93,7 @@ const Footer = () => {
                             <div className="input-group">
                                 <input
                                     type="email"
-                                    className="form-control"
+                                    className="form-control input-bar"
                                     placeholder="Enter your email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
